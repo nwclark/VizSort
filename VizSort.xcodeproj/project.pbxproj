@@ -14,6 +14,8 @@
 		C740C9C6277ABFC000BE0D6E /* VizSortTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C740C9C5277ABFC000BE0D6E /* VizSortTests.swift */; };
 		C740C9D0277ABFC000BE0D6E /* VizSortUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C740C9CF277ABFC000BE0D6E /* VizSortUITests.swift */; };
 		C740C9D2277ABFC000BE0D6E /* VizSortUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C740C9D1277ABFC000BE0D6E /* VizSortUITestsLaunchTests.swift */; };
+		C740C9DF277ABFD300BE0D6E /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C740C9DE277ABFD300BE0D6E /* DataModel.swift */; };
+		C740C9E1277AC48F00BE0D6E /* NumberLinesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C740C9E0277AC48F00BE0D6E /* NumberLinesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,9 @@
 		C740C9CB277ABFC000BE0D6E /* VizSortUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VizSortUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C740C9CF277ABFC000BE0D6E /* VizSortUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VizSortUITests.swift; sourceTree = "<group>"; };
 		C740C9D1277ABFC000BE0D6E /* VizSortUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VizSortUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C740C9DE277ABFD300BE0D6E /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		C740C9E0277AC48F00BE0D6E /* NumberLinesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberLinesView.swift; sourceTree = "<group>"; };
+		C740C9E2277AC4F500BE0D6E /* VizSort.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VizSort.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +99,13 @@
 		C740C9B3277ABFBE00BE0D6E /* VizSort */ = {
 			isa = PBXGroup;
 			children = (
+				C740C9E2277AC4F500BE0D6E /* VizSort.entitlements */,
 				C740C9B4277ABFBE00BE0D6E /* VizSortApp.swift */,
 				C740C9B6277ABFBE00BE0D6E /* ContentView.swift */,
+				C740C9E0277AC48F00BE0D6E /* NumberLinesView.swift */,
 				C740C9B8277ABFBF00BE0D6E /* Assets.xcassets */,
 				C740C9BA277ABFBF00BE0D6E /* Preview Content */,
+				C740C9DE277ABFD300BE0D6E /* DataModel.swift */,
 			);
 			path = VizSort;
 			sourceTree = "<group>";
@@ -259,6 +267,8 @@
 			files = (
 				C740C9B7277ABFBE00BE0D6E /* ContentView.swift in Sources */,
 				C740C9B5277ABFBE00BE0D6E /* VizSortApp.swift in Sources */,
+				C740C9DF277ABFD300BE0D6E /* DataModel.swift in Sources */,
+				C740C9E1277AC48F00BE0D6E /* NumberLinesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +426,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = VizSort/VizSort.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"VizSort/Preview Content\"";
@@ -434,9 +445,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = net.clarknw.VizSort;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -445,6 +457,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = VizSort/VizSort.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"VizSort/Preview Content\"";
@@ -463,9 +476,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = net.clarknw.VizSort;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
