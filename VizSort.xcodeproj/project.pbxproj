@@ -16,6 +16,8 @@
 		C740C9D2277ABFC000BE0D6E /* VizSortUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C740C9D1277ABFC000BE0D6E /* VizSortUITestsLaunchTests.swift */; };
 		C740C9DF277ABFD300BE0D6E /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C740C9DE277ABFD300BE0D6E /* DataModel.swift */; };
 		C740C9E1277AC48F00BE0D6E /* NumberLinesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C740C9E0277AC48F00BE0D6E /* NumberLinesView.swift */; };
+		C7608869277B81E200AF39F1 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C7608867277B81E200AF39F1 /* README.md */; };
+		C760886A277B81E200AF39F1 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = C7608868277B81E200AF39F1 /* LICENSE */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		C740C9DE277ABFD300BE0D6E /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		C740C9E0277AC48F00BE0D6E /* NumberLinesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberLinesView.swift; sourceTree = "<group>"; };
 		C740C9E2277AC4F500BE0D6E /* VizSort.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VizSort.entitlements; sourceTree = "<group>"; };
+		C7608867277B81E200AF39F1 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C7608868277B81E200AF39F1 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,8 @@
 		C740C9A8277ABFBE00BE0D6E = {
 			isa = PBXGroup;
 			children = (
+				C7608868277B81E200AF39F1 /* LICENSE */,
+				C7608867277B81E200AF39F1 /* README.md */,
 				C740C9B3277ABFBE00BE0D6E /* VizSort */,
 				C740C9C4277ABFC000BE0D6E /* VizSortTests */,
 				C740C9CE277ABFC000BE0D6E /* VizSortUITests */,
@@ -239,7 +245,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7608869277B81E200AF39F1 /* README.md in Resources */,
 				C740C9BC277ABFBF00BE0D6E /* Preview Assets.xcassets in Resources */,
+				C760886A277B81E200AF39F1 /* LICENSE in Resources */,
 				C740C9B9277ABFBF00BE0D6E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
