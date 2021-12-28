@@ -29,11 +29,12 @@ import Foundation
 
 final class DataModel: ObservableObject {
 
+    /// Number of elements in the array to sort.
     static let size = 500
 
     @Published var numbers = Array<Int>(repeating: 0, count: DataModel.size)
 
-
+    /// Populates the array with random `Integers`.
     func resetToRandom() {
         var newNumbers = Array<Int>(repeating: 0, count: DataModel.size)
         DispatchQueue.global(qos: .userInitiated).async {
@@ -41,14 +42,19 @@ final class DataModel: ObservableObject {
                 newNumbers[index] = Int.random(in: 0...Int.max)
             }
 
+            // Updates must be published on the main thread.
             DispatchQueue.main.async {
                 self.numbers = newNumbers
+//                self.printNumbers()
             }
         }
     }
 
+
+    /// Uses BubbleSort to sort the array from smallest to largest. Publishes changes on the
+    /// main thread.
     func sortInPlace() {
-        var workingNumbers = self.numbers // copy?
+        var workingNumbers = self.numbers
 
         DispatchQueue.global(qos: .userInitiated).async {
             // Le Bubblesort 🥂
@@ -59,11 +65,21 @@ final class DataModel: ObservableObject {
                         workingNumbers[index] = workingNumbers[index + 1]
                         workingNumbers[index + 1] = temp
                     }
+
+                    // Updates must be published on the main thread.
                     DispatchQueue.main.sync {
                         self.numbers = workingNumbers
+//                        self.printNumbers()
                     }
                 }
             }
+        }
+    }
+
+    /// Print the numbers array to the console.
+    func printNumbers() {
+        (0..<DataModel.size).forEach { index in
+            print("numbers[\(index)]: \(numbers[index])")
         }
     }
 }

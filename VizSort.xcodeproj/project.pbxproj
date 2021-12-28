@@ -106,12 +106,12 @@
 			isa = PBXGroup;
 			children = (
 				C740C9E2277AC4F500BE0D6E /* VizSort.entitlements */,
-				C740C9B4277ABFBE00BE0D6E /* VizSortApp.swift */,
 				C740C9B6277ABFBE00BE0D6E /* ContentView.swift */,
+				C740C9DE277ABFD300BE0D6E /* DataModel.swift */,
 				C740C9E0277AC48F00BE0D6E /* NumberLinesView.swift */,
+				C740C9B4277ABFBE00BE0D6E /* VizSortApp.swift */,
 				C740C9B8277ABFBF00BE0D6E /* Assets.xcassets */,
 				C740C9BA277ABFBF00BE0D6E /* Preview Content */,
-				C740C9DE277ABFD300BE0D6E /* DataModel.swift */,
 			);
 			path = VizSort;
 			sourceTree = "<group>";

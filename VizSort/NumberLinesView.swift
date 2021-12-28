@@ -37,13 +37,12 @@ struct NumberLinesView: View {
                 (0..<DataModel.size).forEach { index in
                     let xPos = CGFloat(index) * xScale
                     let yTop = geometry.size.height - (CGFloat(self.dataModel.numbers[index])/CGFloat(Int.max) * geometry.size.height)
-//                    print("xPos: \(xPos) yTop: \(yTop)")
+//                    print("number[\(index)] = \(self.dataModel.numbers[index]) xPos: \(xPos) yTop: \(yTop)")
                     path.move(to: CGPoint(x: xPos, y: geometry.size.height))
                     path.addLine(to: CGPoint(x: xPos, y: yTop))
                 }
             }
             .stroke(.black)
-//            .animation(.spring() , value: dataModel.numbers)
         }
     }
 }
