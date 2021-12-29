@@ -4,6 +4,10 @@
 Watch as the Bubble Sort algorithm slowly sorts elements from
 smallest to largest.
 
+## Supported Platforms
+VizSort is written for the iPad running iOS 15.2 or later. It can also be run on
+Mac OS Monterey 12.1 or later.
+
 ## Operation
 Upon launching the application, press the **Reset** button to generate an
 array of random integers. Press the **Sort** button to sort the array using

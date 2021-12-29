@@ -26,7 +26,6 @@
 
 import Foundation
 
-
 final class DataModel: ObservableObject {
 
     /// Number of elements in the array to sort.
@@ -36,7 +35,7 @@ final class DataModel: ObservableObject {
 
     @Published var isProcessing: Bool = false
 
-    /// Populates the array with random `Integers`.
+    /// Populates the array with random `Int`s.
     func resetToRandom() {
         isProcessing = true
         var newNumbers = Array<Int>(repeating: 0, count: DataModel.size)
@@ -52,7 +51,6 @@ final class DataModel: ObservableObject {
             }
         }
     }
-
 
     /// Uses BubbleSort to sort the array from smallest to largest. Publishes changes on the
     /// main thread.
