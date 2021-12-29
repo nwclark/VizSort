@@ -17,7 +17,7 @@ There is no job control, so the sort can be started multiple times on the
 same array.
 
 ## Possible Improvements
-* Better job control. Disable buttons while the array is being sorted. Provide a cancel button.
+* Better job control. Provide a cancel button.
 * Dynamic array size. Allow the user to specify the sorting algorithm to use.
 * Stats display. Provide performance metrics in a heads-up display.
 

@@ -31,9 +31,11 @@ struct ContentView: View {
 
     var body: some View {
         VStack {
+            // Array Lines.
             NumberLinesView()
                 .padding()
 
+            // Row of buttons.
             HStack {
                 Button {
                     self.dataModel.resetToRandom()
@@ -55,6 +57,9 @@ struct ContentView: View {
                 .foregroundColor(.white)
                 .cornerRadius(.infinity)
             }
+            .disabled(dataModel.isProcessing)
+            .opacity(dataModel.isProcessing ? 0.6 : 1.0)
+            .scaleEffect(dataModel.isProcessing ? 0.95 : 1.0)
         }
         .padding()
     }
