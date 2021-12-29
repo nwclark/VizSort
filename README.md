@@ -1,5 +1,5 @@
 # VizSort
-Using SwiftUI to Visualize Sorting Algorithms
+**Goal:** Use SwiftUI to visualize sorting algorithms.
 
 Watch as the Bubble Sort algorithm slowly sorts elements from
 smallest to largest.
@@ -10,14 +10,14 @@ array of random integers. Press the **Sort** button to sort the array using
 Bubble Sort.
 
 ## Why BubbleSort?
-It's fun to watch
+It's fun to watch.
 
 ## Gotchas
-There is no job control, so the sort can be started multiple times on the
-same array.
+There is no way to cancel a running sort.
 
 ## Possible Improvements
 * Better job control. Provide a cancel button.
+* Allow user to select from multiple sorting algorithms.
 * Dynamic array size. Allow the user to specify the sorting algorithm to use.
 * Stats display. Provide performance metrics in a heads-up display.
 
