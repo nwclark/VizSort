@@ -30,38 +30,45 @@ struct ContentView: View {
     @EnvironmentObject var dataModel: DataModel
 
     var body: some View {
-        VStack {
-            // Array Lines.
-            NumberLinesView()
+        ZStack (alignment: .topLeading) {
+            StatisticsView(stats: dataModel.statistics)
                 .padding()
+                .background(.gray)
+                .border(.black, width: 2.0)
 
-            // Row of buttons.
-            HStack {
-                Button {
-                    self.dataModel.resetToRandom()
-                } label: {
-                    Text("Reset")
-                }
-                .padding()
-                .background(.red)
-                .foregroundColor(.white)
-                .cornerRadius(.infinity)
+            VStack {
+                // Array Lines.
+                NumberLinesView()
+                    .padding()
 
-                Button {
-                    self.dataModel.sortInPlace()
-                } label: {
-                    Text("Sort")
+                // Row of buttons.
+                HStack {
+                    Button {
+                        self.dataModel.resetToRandom()
+                    } label: {
+                        Text("Reset")
+                    }
+                    .padding()
+                    .background(.red)
+                    .foregroundColor(.white)
+                    .cornerRadius(.infinity)
+
+                    Button {
+                        self.dataModel.sortInPlace()
+                    } label: {
+                        Text("Sort")
+                    }
+                    .padding()
+                    .background(.blue)
+                    .foregroundColor(.white)
+                    .cornerRadius(.infinity)
                 }
-                .padding()
-                .background(.blue)
-                .foregroundColor(.white)
-                .cornerRadius(.infinity)
+                .disabled(dataModel.isProcessing)
+                .opacity(dataModel.isProcessing ? 0.6 : 1.0)
+                .scaleEffect(dataModel.isProcessing ? 0.95 : 1.0)
             }
-            .disabled(dataModel.isProcessing)
-            .opacity(dataModel.isProcessing ? 0.6 : 1.0)
-            .scaleEffect(dataModel.isProcessing ? 0.95 : 1.0)
+            .padding()
         }
-        .padding()
     }
 }
 
